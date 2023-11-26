@@ -23,7 +23,7 @@ pub enum FrameError {
 /// Frame Struct Used To Get The Frame Buffer
 pub struct Frame<'a> {
     d3d_device: &'a ID3D11Device,
-    frame_surface: ID3D11Texture2D,
+    pub frame_surface: ID3D11Texture2D,
     context: &'a ID3D11DeviceContext,
     buffer: &'a mut Vec<u8>,
     width: u32,
